@@ -24,9 +24,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         enableEdgeToEdge()
-
         setContent {
             KotlinAndroidPipelineTheme {
                 Scaffold(
@@ -41,9 +39,8 @@ class MainActivity : ComponentActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.Center
                     ) {
-
                         val context = LocalContext.current
-
+// Test
                         var text by remember {
                             mutableStateOf("")
                         }
