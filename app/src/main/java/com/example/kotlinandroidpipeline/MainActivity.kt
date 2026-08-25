@@ -78,16 +78,16 @@ class MainActivity : ComponentActivity() {
                             Text("Show Toast")
                         }
 
-                        /*Button(
+                        Button(
                             onClick = {
                                 Analytics.trackEvent("Button Clicked", mapOf("Text" to text))
                             },
                             modifier = Modifier.padding(top = 8.dp)
                         ) {
                             Text("Track Event")
-                        }*/
+                        }
 
-                        Button(
+                        /*Button(
                             onClick = {
                                 Analytics.trackEvent("My custom event");
                                 throw RuntimeException("Test Crash from App Center")
@@ -95,7 +95,7 @@ class MainActivity : ComponentActivity() {
                             modifier = Modifier.padding(top = 8.dp)
                         ) {
                             Text("Test Crash")
-                        }
+                        }*/
                     }
                 }
             }
