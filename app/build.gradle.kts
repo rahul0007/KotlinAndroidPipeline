@@ -55,4 +55,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation("com.microsoft.appcenter:appcenter-analytics:5.0.4")
+    implementation("com.microsoft.appcenter:appcenter-crashes:5.0.4")
 }
