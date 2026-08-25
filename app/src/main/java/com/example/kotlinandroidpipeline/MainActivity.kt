@@ -19,20 +19,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.kotlinandroidpipeline.ui.theme.KotlinAndroidPipelineTheme
-import com.microsoft.appcenter.AppCenter
-import com.microsoft.appcenter.analytics.Analytics
-import com.microsoft.appcenter.crashes.Crashes
 
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        AppCenter.start(
-            getApplication(), "1438a942-d07b-42c2-a9f9-36b4dc229821",
-            Analytics::class.java, Crashes::class.java
-
-        )
         enableEdgeToEdge()
         setContent {
             KotlinAndroidPipelineTheme {
@@ -80,7 +71,6 @@ class MainActivity : ComponentActivity() {
 
                         Button(
                             onClick = {
-                                Analytics.trackEvent("Button Clicked", mapOf("Text" to text))
                             },
                             modifier = Modifier.padding(top = 8.dp)
                         ) {
