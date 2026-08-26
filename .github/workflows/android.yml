@@ -21,7 +21,7 @@ jobs:
   # DEBUG BUILD
   # =========================
   debug:
-    if: github.ref == 'refs/heads/feature-1' || github.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/feature-1' || github.ref == 'refs/heads/dev || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
@@ -63,7 +63,7 @@ jobs:
   # RELEASE BUILD
   # =========================
   release:
-    if: github.ref == 'refs/heads/test' || github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/test' || github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
