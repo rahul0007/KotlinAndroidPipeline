@@ -97,7 +97,6 @@ jobs:
 
       - name: Grant execute permission
         run: chmod +x gradlew
-
       # Build signed Release APK
       - name: Build Release APK
         run: ./gradlew assembleRelease
